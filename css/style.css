@@ -1,0 +1,797 @@
+/* Font Files */
+@font-face {
+  font-family: F_Bold;
+  src: local("F_Bold"), url("BOLD.TTF");
+}
+
+
+/* main css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body , html{
+  font-family: F_Bold, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input, button{
+  border: none;
+  outline: none;
+}
+
+
+
+/* error form style */ 
+
+#error {
+  position: relative;
+  top: -5px;
+  color: red;
+  font-size: 14px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 5px 3px;
+  background: #fcfefe;
+  border-radius: 3px;
+  border: 1px solid red;
+  line-height: 1.2;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#error.active {
+  opacity: 1;
+}
+
+
+/* button */
+
+.btn_img {
+  width: 55%;
+  margin: 0 auto;
+  padding: 8px 0 0;
+}
+
+.div_btn{
+  text-align: center;
+  
+}
+.div_btn .btn{
+  font-family: F_Bold, sans-serif;
+  font-size: 28px;
+  padding: 1px 38px 5px;
+  line-height: 1.9;
+  color: #fff  ;
+  background: linear-gradient(-120deg,#E32315, #95130A);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #5858586b;
+  cursor: pointer;
+}
+
+.div_btn .btn span{
+  color: #d5d5d5;
+}
+@media (min-width:576px){
+  .btn_img{
+    width: 280px;
+  }
+}
+
+@media (min-width:992px){
+  .btn_img{
+    width: 240px;
+  }
+}
+
+
+
+/* ================== */
+/* Start hero Section */
+
+.hero .content{
+  background: url(../images/bg-hero.webp);
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 8px;
+  text-align: center;
+}
+.hero ul li{
+  font-size: 5.2vw;
+  line-height: 1.25;
+  padding: 4px 1px 8px;
+  margin: 0 auto 10px;
+  box-shadow: 0 5px 15px #58585820;
+  color: #fff;
+}
+.hero ul li.blue{
+  background: #3886D8;
+}
+.hero ul li.black{
+  background: #080808;
+}
+.hero ul li.last{
+  margin-bottom: 0;
+}
+
+
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+  .hero ul li.orange,
+  .hero ul li.white{
+    border-radius: 20px;
+    margin: 0 auto 10px;
+    width: 76%;
+    font-size: 4vw;
+  }
+  .hero ul li.last{
+  font-size: 3.8vw;
+}
+}
+
+/* ==========  md ≥ 768px  ========== */
+@media (min-width:768px){
+
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+.flex{
+  display: flex;
+}
+.flexone{
+  align-items: center;
+}
+.hero{
+  width: 50%;
+}
+
+.hero .top_img{
+  margin-top: -4vw;
+}
+  .hero ul li.orange ,
+  .hero ul li.white{
+  font-size: 22px;
+      width: 82%;
+}
+.hero ul li.last{
+  font-size: 23px;
+} 
+
+
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width:1200px){
+  .hero ul li.orange ,
+  .hero ul li.white{
+  font-size: 28px;
+      width: 90%;
+}
+}
+
+/* End hero Section */
+/* ================== */
+
+
+
+
+
+/* ================== */
+/* Start results Section */
+
+.results{
+  background: url(../images/bg-result.webp);
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+}
+.results h3{
+  font-size: 8vw;
+  color: #fff;
+  line-height: 1.3;
+}
+.results .top_result{
+  padding: 15px 0;
+}
+
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+.results .img-result{
+  width: 90%;
+  margin: 0 auto 20px;
+}
+}
+
+/* ==========  md ≥ 768px  ========== */
+@media (min-width:768px){
+.results .img-result{
+  width: 80%;
+  margin: 0 auto 20px;
+}
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+.results{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.results .img-result{
+  margin-bottom: 20px;
+  }
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width:1200px){
+
+}
+/* End results Section */
+/* ================== */
+
+
+
+
+
+
+
+/* ================== */
+/* Start doctor Section */
+
+.doctor{
+  position: relative;
+   background: url(../images/bg-doctor.webp) center/cover;
+}
+.doctor .top_doctor{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 15px;
+text-align: center;
+justify-content: center;
+position: relative;
+}
+.doctor .top_doctor h3{
+  font-size: 6vw;
+  line-height: 1.2;
+  color: #ED2516;
+  border-left: 1px solid #00000073;
+  padding: 2px 0 10px 15px;
+
+  }
+  .doctor .top_doctor h5{
+    padding-right: 5px;
+    font-size: 6vw;
+    line-height: 1.2;
+  padding: 2px 15px 10px 0px;
+  }
+.doctor .text{
+  text-align: center;
+}
+.doctor ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin-top: 15px;
+}
+.doctor ul li{
+  width: 48.5%;
+  font-size: 2.9vw;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 2px 0 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Example value */;
+  border-radius: 15px;
+}
+.doctor ul li.red{
+  background: linear-gradient(#EE2516, #A5160C);
+}
+.doctor ul li.black{
+  background: linear-gradient(#0F0F0F, #4E4E4E);;
+}
+.doctor .more{
+  border: 1px solid #ED2516;
+  width: max-content;
+  margin: 10px auto 0;
+  padding: 0 15px 8px;
+  border-radius: 15px;
+}
+.doctor .more h4{
+  font-size: 4vw;
+  line-height: 1.3;
+  color: #ED2516;
+}
+.doctor .more p{
+  font-size: 3.6vw;
+  line-height: 1.4;
+  color: #0F0F0F;
+}
+
+
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+ .doctor ul li{
+    margin-bottom: 20px;
+    width: 47%;
+    font-size: 3.5vw;
+  }
+
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+  .flex-reverse{
+    flex-direction: row-reverse;
+  }
+  .doctor{
+    width: 50%;
+  }
+  .doctor .text{
+    top: 40vw;
+  }
+  .doctor ul li{
+    font-size: 24px;
+    width: 70%;
+  }
+  .doctor ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .doctor ul li.red:nth-child(3n){
+       background: linear-gradient(#4EA7F9, #487EFA);
+    }
+     .doctor ul li.blue:nth-child(2n){
+      background: linear-gradient(#E32315, #95130A);
+    }
+
+
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width:1300px){
+
+}
+
+/* End doctor Section */
+/* ================== */
+
+
+
+
+
+
+
+
+/* ================== */
+/* Start how_work Section */
+
+.how_work{
+  position: relative;
+  background: url(../images/bg-how-work.webp) center/cover;
+  text-align: center;
+}
+
+.how_work .top_how_work{
+  padding-top: 10px;
+}
+.how_work .top_how_work h3{
+  color: #fff;
+  font-size: 9vw;
+  line-height: 1.2;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.413);
+}
+
+
+.how_work .top_how_work h5{
+  color: #Fff;
+  background: linear-gradient(#4EA7F9 ,#4983F9 );
+  width: max-content;
+  margin: 15px auto 20px;
+  padding: 0 15px 2px;
+  border-radius: 0px 30px 0px 30px;
+  font-size: 6vw;
+  line-height: 1.4;
+}
+.how_work ul{
+  padding: 15px 0 0;
+}
+
+.how_work ul li{
+  font-size: 4.2vw;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto 15px;
+  padding: 2px 5px 6px;
+}
+.how_work ul li:nth-child(even) {
+  background: #4EA7F9;
+}
+.how_work ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+
+}
+
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+  .how_work{
+    width: 50%;
+  }
+
+  .how_work .top_how_work h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .how_work .top_how_work h5{
+    font-size: 27px;
+  }
+  .how_work ul li{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width:1200px){
+
+}
+
+
+/* End how_work Section */
+/* ================== */
+
+
+
+
+
+
+/* ================== */
+/* Start form_section Section */
+
+
+/* top form section */
+
+
+/* form */
+
+.form_section .container_form{
+  background: linear-gradient(#4B96F9,#487CFA);
+  padding-bottom: 10px;
+}
+
+.form_section .sm-p {
+  font-size: 2.5vw;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+  padding: 7px 0;
+}
+
+
+.form_section form{
+  background: #2B5B8F;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto ;
+  border-radius: 18px;
+  box-shadow: 5px 5px 8px #00000027;
+  padding-bottom: 15px;
+}
+.form_section .top_form{
+  padding: 12px 0;
+}
+.form_section .top_form p{
+  font-size: 5.2vw;
+  line-height: 1.3;
+  color: #fbfdfd;
+}
+.form_section form .input_div{
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  }
+
+.form_section form .input_div svg{
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: #B21EB6;
+}
+
+.form_section form .input_div .icon_Phone{
+  transform:translateY(-50%) scaleX(-1);
+}
+
+
+.form_section form input{
+  width: 100%;
+  padding: 15px 40px 15px 10px;
+  font-size: 18px;
+  box-shadow: 5px 5px 8px #00000031;
+  text-align: right;
+  font-family: sans-serif;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in;
+}
+.form_section form input:focus {
+  border-color: #68E03E;
+}
+
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+.form_section .sm-p{
+  font-size: 2.5vw;
+}
+.form_section .top_form p{
+  font-size: 4.8vw;
+}
+.form_section form .input_div{
+  width: 90%;
+}
+.form_section .top_form p{
+  font-size: 4.2vw;
+}
+.form_section form{
+  width: 85%;
+}
+}
+
+
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+.form_section{
+  display: flex;
+}
+.form_section .price{
+  width: 50%;
+}
+
+.form_section .container_form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form_section form{
+  width: 90%;
+}
+
+.form_section .sm-p{
+  font-size: 13.5px;
+}
+.form_section .top_form p{
+  font-size: 24px;
+}
+
+}
+
+/* ==========  xl ≥ 1200px  ========== */
+@media (min-width:1200px){
+.form_section form{
+  width: 80%;
+  padding: 25px 20px 30px;
+  min-width: 550px;
+}
+}
+
+/* End form_section Section */
+/* ================== */
+
+
+
+
+
+
+/* ================== */
+/* Start footer Section */
+
+.footer{
+  background: #487CFA;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.footer .boxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 auto;
+  
+}
+
+.footer .boxs .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 33.3%;
+}
+
+.footer .boxs .box img {
+  height: 24px;
+  width: auto;
+}
+
+.footer .boxs .box p {
+  font-size: 2.4vw;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ==========  Responsive Design  ========== */
+/* ==========  sm ≥ 576px  ========== */
+@media (min-width:576px){
+.footer .boxs .box img{
+  height: 28px;
+}
+}
+
+/* ==========  lg ≥ 992px  ========== */
+@media (min-width:992px){
+  .footer{
+        background: linear-gradient(#4EA7F9, #487EFA);
+  }
+  .footer .boxs .box{
+    gap: 20px;
+  }
+.footer .boxs .box img{
+  height: 40px;
+}
+.footer .boxs .box p{
+  font-size: 18px;
+}
+
+}
+
+/* End footer Section */
+/* ================== */
+
+
+
+
+
+
+
+
+
+
+/* ================== */
+/* Start Thanks Page Section */
+
+
+body.thanks_page_page {
+  background: url(../images/thanks.webp) center/cover;
+  min-height: 100vh;
+}
+
+.thanks_page {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.thanks_page h3 {
+  font-size: 20px;
+  color: #fcfefe;
+   background: linear-gradient(#4EA7F9, #487EFA);
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 0px 11px 2px 60px;
+}
+
+.thanks_page p {
+  font-size: 13px;
+  color: #fcfefe;
+   background: linear-gradient(to left,#2A2A2A ,#151515 );
+  width: max-content;
+  margin: 0 auto 15px;
+  border-radius: 0px;
+  padding: 1px 8px 3px 60px;
+  }
+
+
+
+.thanks_page .text{
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  right: -10px;
+}
+.thanks_page .div_btn {
+  margin-top: 25px;
+}
+.thanks_page .div_btn a{
+
+   background: linear-gradient(#4EA7F9, #487EFA);
+}
+.thanks_page .text .img_check{
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translatey(-50%);
+  height: 102%;
+  width: auto;
+}
+/* ==========  Responsive Design  ========== */
+
+
+@media (min-width: 576px) {
+  body.thanks_page_page {
+    background: #313131;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .thanks_page p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .thanks_page h3 {
+    font-size: 25px;
+    margin: 0px auto 8px;
+  }
+
+  .thanks_page .text img {
+    width: 100px;
+  }
+}
+
+
+
+
+/* End Thanks Page Section */
+/* ================== */
